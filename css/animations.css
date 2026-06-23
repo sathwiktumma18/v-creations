@@ -1,0 +1,192 @@
+/* ============================================
+   V CREATIONS — Animations
+   Cinematic Reveals, Keyframes, Parallax
+   ============================================ */
+
+/* ══════════════════════════════════════════════
+   SCROLL-TRIGGERED REVEALS
+   ══════════════════════════════════════════════ */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1s var(--ease-dramatic),
+              transform 1s var(--ease-dramatic);
+}
+
+.reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: opacity 1s var(--ease-dramatic),
+              transform 1s var(--ease-dramatic);
+}
+
+.reveal-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: opacity 1s var(--ease-dramatic),
+              transform 1s var(--ease-dramatic);
+}
+
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 1s var(--ease-dramatic),
+              transform 1s var(--ease-dramatic);
+}
+
+.reveal-scale.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Clip-path reveal (curtain) */
+.reveal-clip {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1.4s var(--ease-dramatic);
+}
+
+.reveal-clip.visible {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Stagger delays */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+.delay-5 { transition-delay: 0.5s; }
+.delay-6 { transition-delay: 0.7s; }
+
+/* ══════════════════════════════════════════════
+   GOLD SHIMMER TEXT
+   ══════════════════════════════════════════════ */
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    var(--gold-dark) 0%,
+    var(--gold-light) 30%,
+    var(--gold) 50%,
+    var(--gold-light) 70%,
+    var(--gold-dark) 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+/* ══════════════════════════════════════════════
+   HERO ANIMATIONS
+   ══════════════════════════════════════════════ */
+@keyframes heroTitleIn {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlow {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUpSlow {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to hero elements after loader */
+body.loaded .hero__logo {
+  animation: fadeInSlow 1.5s var(--ease-dramatic) 0.2s forwards;
+}
+
+body.loaded .hero__title span {
+  animation: heroTitleIn 1.2s var(--ease-dramatic) forwards;
+}
+
+body.loaded .hero__title span:nth-child(1) { animation-delay: 0.5s; }
+body.loaded .hero__title span:nth-child(2) { animation-delay: 0.7s; }
+
+body.loaded .hero__tagline {
+  animation: fadeInUpSlow 1.2s var(--ease-dramatic) 1.2s forwards;
+}
+
+body.loaded .hero__btns {
+  animation: fadeInUpSlow 1s var(--ease-dramatic) 1.6s forwards;
+}
+
+body.loaded .hero__scroll {
+  animation: fadeInSlow 1s var(--ease) 2.2s forwards;
+}
+
+/* ══════════════════════════════════════════════
+   IMAGE SKELETON LOADING
+   ══════════════════════════════════════════════ */
+@keyframes skeleton {
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
+}
+
+.img-skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--bg-elevated) 0px,
+    var(--bg-warm) 40px,
+    var(--bg-elevated) 80px
+  );
+  background-size: 200px 100%;
+  animation: skeleton 1.5s ease-in-out infinite;
+  min-height: 200px;
+}
+
+/* ══════════════════════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal-up, .reveal-left, .reveal-right,
+  .reveal-scale, .reveal-clip {
+    opacity: 1;
+    transform: none;
+    clip-path: none;
+    transition: none;
+  }
+
+  .grain { animation: none; }
+}

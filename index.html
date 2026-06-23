@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>V Creations Photography | Luxury Wedding Photography, Album Design & Drone — Huzur Nagar, Telangana</title>
+  <meta name="description" content="V Creations by Venky — Luxury South Indian wedding photography, bespoke album design & cinematic drone coverage. 7+ years, 600+ weddings. Huzur Nagar, Telangana.">
+  <meta name="keywords" content="luxury wedding photography, South Indian wedding, album design, drone videography, Huzur Nagar photographer, Telangana wedding photographer, cinematic wedding films">
+  <meta name="author" content="V Creations Photography">
+
+  <meta property="og:title" content="V Creations — Every Frame Tells a Story">
+  <meta property="og:description" content="Luxury wedding photography, album design & drone cinematography. 7+ years, 600+ weddings.">
+  <meta property="og:type" content="website">
+
+  <link rel="alternate" hreflang="en" href="./">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Film Grain -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════
+       LOADER
+       ═══════════════════════════════════════ -->
+  <div class="loader" id="loader">
+    <img src="Photos/assets/logo.PNG" alt="V Creations" class="loader__logo">
+    <div class="loader__line"></div>
+    <span class="loader__text">Crafting Your Experience</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       NAVIGATION
+       ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero">
+        <img src="Photos/assets/logo.PNG" alt="V Creations" class="nav__logo">
+      </a>
+
+      <div class="nav__links" id="nav-links">
+        <a href="#hero" class="nav__link active">Home</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#albums" class="nav__link">Albums</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#drone" class="nav__link">Drone</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="https://wa.me/919676425924?text=Hi%20Venky%2C%20I'd%20like%20to%20book%20your%20photography%20services."
+           target="_blank" rel="noopener" class="nav__cta">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book Now
+        </a>
+      </div>
+
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════
+         HERO — Cinematic Drone Video
+         ═══════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__video-bg">
+        <video autoplay muted loop playsinline preload="auto" poster="Photos/wedding/DSC06908.jpg">
+          <source src="Photos/drone_videos/Drone_video.MP4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero__overlay"></div>
+      <div class="hero__letterbox-top" aria-hidden="true"></div>
+      <div class="hero__letterbox-bottom" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <img src="Photos/assets/logo.PNG" alt="V Creations" class="hero__logo">
+        <h1 class="hero__title">
+          <span>V&nbsp;Creations</span>
+        </h1>
+        <p class="hero__tagline">Every Frame Tells a Story</p>
+        <div class="hero__btns">
+          <a href="#portfolio" class="btn btn--primary">View Portfolio</a>
+          <a href="https://wa.me/919676425924?text=Hi%20Venky%2C%20I'd%20like%20to%20book%20your%20photography%20services."
+             target="_blank" rel="noopener" class="btn btn--outline">Book Now</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <span class="hero__scroll-label">Scroll</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         STATS — Cinematic Numbers
+         ═══════════════════════════════════════ -->
+    <section class="section stats-section" id="stats">
+      <div class="container--full">
+        <div class="stats-bar reveal-up">
+          <div class="stats-bar__item">
+            <div class="stat__number" data-count="7" data-suffix="+">0+</div>
+            <div class="stat__label">Years of Artistry</div>
+          </div>
+          <div class="stats-bar__item">
+            <div class="stat__number" data-count="600" data-suffix="+">0+</div>
+            <div class="stat__label">Weddings Captured</div>
+          </div>
+          <div class="stats-bar__item">
+            <div class="stat__number" data-count="1000" data-suffix="+">0+</div>
+            <div class="stat__label">Happy Families</div>
+          </div>
+          <div class="stats-bar__item">
+            <div class="stat__number" data-count="50" data-suffix="+">0+</div>
+            <div class="stat__label">Albums Designed</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SERVICES — Three Cinematic Panels
+         ═══════════════════════════════════════ -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center; margin-bottom:var(--space-3xl);">
+          <span class="label">What We Create</span>
+          <h2 class="section-heading">Our Craft</h2>
+          <p class="section-sub" style="margin:0 auto;">Three pillars of our artistry — each frame, page, and flight designed to preserve your story forever</p>
+        </div>
+
+        <div class="services__grid">
+          <!-- Wedding Photography -->
+          <div class="service-panel reveal-clip delay-1" id="svc-wedding">
+            <img src="Photos/wedding/DSC06908.jpg" alt="South Indian wedding photography — bridal portrait with dramatic lighting" loading="lazy">
+            <div class="service-panel__overlay">
+              <span class="service-panel__num">01</span>
+              <div class="service-panel__line"></div>
+              <h3 class="service-panel__title">Wedding Photography</h3>
+              <p class="service-panel__desc">Candid & cinematic coverage of your sacred ceremonies, from mehndi to mandap</p>
+            </div>
+          </div>
+
+          <!-- Album Design -->
+          <div class="service-panel reveal-clip delay-3" id="svc-album">
+            <img src="Photos/wedding/000.jpg" alt="Premium wedding album design — artistic layout with multiple frames" loading="lazy">
+            <div class="service-panel__overlay">
+              <span class="service-panel__num">02</span>
+              <div class="service-panel__line"></div>
+              <h3 class="service-panel__title">Album Design</h3>
+              <p class="service-panel__desc">Bespoke album spreads that transform your moments into heirloom art</p>
+            </div>
+          </div>
+
+          <!-- Drone Cinematography -->
+          <div class="service-panel reveal-clip delay-5" id="svc-drone">
+            <img src="Photos/wedding/20.jpg" alt="Professional drone videography — cinematic aerial event coverage" loading="lazy">
+            <div class="service-panel__overlay">
+              <span class="service-panel__num">03</span>
+              <div class="service-panel__line"></div>
+              <h3 class="service-panel__title">Drone Cinematography</h3>
+              <p class="service-panel__desc">Breathtaking aerial perspectives that elevate your celebration</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ALBUM DESIGN SHOWCASE
+         ═══════════════════════════════════════ -->
+    <section class="section albums-section" id="albums">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center; margin-bottom:var(--space-3xl);">
+          <span class="label">Handcrafted Albums</span>
+          <h2 class="section-heading">Album Creations</h2>
+          <p class="section-sub" style="margin:0 auto;">Each album is a story — meticulously designed, page by page, to relive your most precious moments</p>
+        </div>
+
+        <div class="album-book reveal-scale" style="perspective:2000px;">
+          <div class="album-book__viewport">
+            <!-- Spread 1: Wedding -->
+            <div class="album-book__page" style="display:block;">
+              <div class="album-spread">
+                <img src="Photos/wedding/14.jpg" alt="Wedding album — bride preparation" loading="lazy">
+                <img src="Photos/wedding/15.jpg" alt="Wedding album — ceremony moments" loading="lazy">
+              </div>
+            </div>
+            <!-- Spread 2: Wedding -->
+            <div class="album-book__page" style="display:none;">
+              <div class="album-spread">
+                <img src="Photos/wedding/16.jpg" alt="Wedding album — couple portrait" loading="lazy">
+                <img src="Photos/wedding/17.jpg" alt="Wedding album — reception" loading="lazy">
+              </div>
+            </div>
+            <!-- Spread 3: Wedding -->
+            <div class="album-book__page" style="display:none;">
+              <div class="album-spread">
+                <img src="Photos/wedding/22.jpg" alt="Wedding album — artistic shot" loading="lazy">
+                <img src="Photos/wedding/23.jpg" alt="Wedding album — celebrations" loading="lazy">
+              </div>
+            </div>
+            <!-- Spread 4: Half-Saree -->
+            <div class="album-book__page" style="display:none;">
+              <div class="album-spread">
+                <img src="Photos/half_saree/04.jpg" alt="Half-saree ceremony album — traditional portrait" loading="lazy">
+                <img src="Photos/half_saree/05.b.jpg" alt="Half-saree ceremony album — family blessings" loading="lazy">
+              </div>
+            </div>
+            <!-- Spread 5: Haldi -->
+            <div class="album-book__page" style="display:none;">
+              <div class="album-spread">
+                <img src="Photos/haldi/24.jpg" alt="Haldi ceremony album — turmeric ritual" loading="lazy">
+                <img src="Photos/haldi/25.jpg" alt="Haldi ceremony album — celebrations" loading="lazy">
+              </div>
+            </div>
+            <!-- Spread 6: Birthday -->
+            <div class="album-book__page" style="display:none;">
+              <div class="album-spread">
+                <img src="Photos/birthday/10.jpg" alt="Birthday album — party moments" loading="lazy">
+                <img src="Photos/birthday/11.jpg" alt="Birthday album — cake cutting" loading="lazy">
+              </div>
+            </div>
+          </div>
+
+          <!-- Nav -->
+          <div class="album-nav">
+            <button class="album-arrow" aria-label="Previous spread">‹</button>
+            <div class="album-dots">
+              <button class="album-dot active" aria-label="Spread 1"></button>
+              <button class="album-dot" aria-label="Spread 2"></button>
+              <button class="album-dot" aria-label="Spread 3"></button>
+              <button class="album-dot" aria-label="Spread 4"></button>
+              <button class="album-dot" aria-label="Spread 5"></button>
+              <button class="album-dot" aria-label="Spread 6"></button>
+            </div>
+            <button class="album-arrow" aria-label="Next spread">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PORTFOLIO — Filtered Masonry Gallery
+         ═══════════════════════════════════════ -->
+    <section class="section portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center; margin-bottom:var(--space-3xl);">
+          <span class="label">Our Work</span>
+          <h2 class="section-heading">Portfolio</h2>
+          <p class="section-sub" style="margin:0 auto;">A curated collection of moments — browse by category</p>
+        </div>
+
+        <div class="filters reveal-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="pre-wedding">Pre-Wedding</button>
+          <button class="filter-btn" data-filter="birthday">Birthday</button>
+          <button class="filter-btn" data-filter="haldi">Haldi</button>
+          <button class="filter-btn" data-filter="half-saree">Half-Saree</button>
+        </div>
+
+        <div class="masonry" id="portfolio-grid">
+
+          <!-- WEDDING (15) -->
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/000.jpg" alt="Wedding album spread — bride preparation" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/14.jpg" alt="Wedding — traditional ceremony" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/15.jpg" alt="Wedding — couple portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/16.jpg" alt="Wedding — ceremony rituals" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/17.jpg" alt="Wedding — reception" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/20.jpg" alt="Wedding — family gathering" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/21.jpg" alt="Wedding — candid moments" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/22.jpg" alt="Wedding — artistic couple shot" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/23.jpg" alt="Wedding — decorations" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/24.jpg" alt="Wedding — grand celebration" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/DSC06908.jpg" alt="Wedding — bridal portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/DSC07015.jpg" alt="Wedding — ceremony details" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/DSC07329.jpg" alt="Wedding — venue" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/DSC09267.jpg" alt="Wedding — emotional moments" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="wedding">
+            <img data-src="Photos/wedding/DSC09400.JPG" alt="Wedding — celebration" class="img-skeleton" loading="lazy">
+          </div>
+
+          <!-- PRE-WEDDING (6) -->
+          <div class="gallery-item reveal revealed" data-category="pre-wedding">
+            <img data-src="Photos/pre_wedding/01.jpg" alt="Pre-wedding — romantic outdoor portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="pre-wedding">
+            <img data-src="Photos/pre_wedding/02.jpg" alt="Pre-wedding — couple walking" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="pre-wedding">
+            <img data-src="Photos/pre_wedding/05.jpg" alt="Pre-wedding — scenic portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="pre-wedding">
+            <img data-src="Photos/pre_wedding/06.jpg" alt="Pre-wedding — candid couple" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="pre-wedding">
+            <img data-src="Photos/pre_wedding/07.jpg" alt="Pre-wedding — creative poses" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="pre-wedding">
+            <img data-src="Photos/pre_wedding/28.jpg" alt="Pre-wedding — golden hour" class="img-skeleton" loading="lazy">
+          </div>
+
+          <!-- BIRTHDAY (6) -->
+          <div class="gallery-item reveal revealed" data-category="birthday">
+            <img data-src="Photos/birthday/03.jpg" alt="Birthday — festive celebrations" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="birthday">
+            <img data-src="Photos/birthday/10.jpg" alt="Birthday — cake cutting" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="birthday">
+            <img data-src="Photos/birthday/11.jpg" alt="Birthday — family & friends" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="birthday">
+            <img data-src="Photos/birthday/12.jpg" alt="Birthday — theme setup" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="birthday">
+            <img data-src="Photos/birthday/13.jpg" alt="Birthday — candid moments" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="birthday">
+            <img data-src="Photos/birthday/40.jpg" alt="Birthday — album spread" class="img-skeleton" loading="lazy">
+          </div>
+
+          <!-- HALDI (10) -->
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/07.a Glitter.jpg" alt="Haldi — glitter and turmeric" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/19.jpg" alt="Haldi — traditional rituals" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/20.jpg" alt="Haldi — vibrant celebration" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/24.jpg" alt="Haldi — turmeric ritual" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/25.jpg" alt="Haldi — group celebration" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/26.jpg" alt="Haldi — candid laughter" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/27.jpg" alt="Haldi — mehndi and flowers" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/28.jpg" alt="Haldi — decorations" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/29.jpg" alt="Haldi — festive atmosphere" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="haldi">
+            <img data-src="Photos/haldi/41.jpg" alt="Haldi — album spread" class="img-skeleton" loading="lazy">
+          </div>
+
+          <!-- HALF-SAREE (9) -->
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/04.jpg" alt="Half-saree ceremony — traditional portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/05.b.jpg" alt="Half-saree — family blessings" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/08.jpg" alt="Half-saree — silk draping" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/09.jpg" alt="Half-saree — ceremony setup" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/10.b.jpg" alt="Half-saree — elegant portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/18.jpg" alt="Half-saree — studio portrait" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/19.jpg" alt="Half-saree — candid celebration" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/24.a.jpg" alt="Half-saree — jewelry and outfit" class="img-skeleton" loading="lazy">
+          </div>
+          <div class="gallery-item reveal revealed" data-category="half-saree">
+            <img data-src="Photos/half_saree/28.jpg" alt="Half-saree — grand album spread" class="img-skeleton" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         DRONE CINEMATOGRAPHY
+         ═══════════════════════════════════════ -->
+    <section class="drone-section" id="drone">
+      <div class="drone-section__bg">
+        <video autoplay muted loop playsinline>
+          <source src="Photos/drone_videos/Drone_video.MP4" type="video/mp4">
+        </video>
+      </div>
+      <div class="drone-section__overlay"></div>
+
+      <div class="drone-section__content">
+        <div class="container" style="text-align:center;">
+          <div class="reveal-up">
+            <span class="label" style="justify-content:center;">Aerial Excellence</span>
+            <h2 class="section-heading">Drone Cinematography</h2>
+            <p class="section-sub" style="margin:0 auto;">A new perspective — cinematic aerial coverage that transforms how you see your celebration</p>
+          </div>
+
+          <div class="drone-player reveal-scale">
+            <video controls preload="metadata" poster="Photos/wedding/20.jpg">
+              <source src="Photos/drone_videos/Drone_video.MP4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         ABOUT VENKY
+         ═══════════════════════════════════════ -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="split">
+          <div class="about-portrait reveal-left">
+            <img src="Photos/assets/Profile.jpeg" alt="Venky — Photographer & Founder of V Creations" class="about-portrait__img" loading="lazy">
+          </div>
+
+          <div class="about-text reveal-right">
+            <span class="label">The Artist</span>
+            <h2 class="section-heading">Meet Venky</h2>
+            <p>With over <span class="gold-em">7 years</span> of experience and more than <span class="gold-em">600 weddings</span> captured, Venky has established V Creations as a trusted name in luxury event photography across Telangana.</p>
+            <p>Specializing in <span class="gold-em">wedding photography</span>, bespoke <span class="gold-em">album design</span>, and professional <span class="gold-em">drone cinematography</span> — Venky brings a rare combination of artistic vision and technical mastery to every celebration.</p>
+            <p>Based in <span class="gold-em">Huzur Nagar, Telangana</span>, V Creations is dedicated to preserving your most sacred moments with warmth, creativity, and unmatched attention to detail.</p>
+
+            <div class="about-telugu">
+              "ప్రతి ఫ్రేమ్ ఒక కథ చెబుతుంది" — 7+ సంవత్సరాల అనుభవం, 600+ వివాహాలు, హుజూర్ నగర్, తెలంగాణ
+            </div>
+
+            <div class="about-badges">
+              <span class="badge">📷 Photographer</span>
+              <span class="badge">📖 Album Designer</span>
+              <span class="badge">🚁 Drone Pilot</span>
+              <span class="badge">📍 Huzur Nagar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         TESTIMONIALS
+         ═══════════════════════════════════════ -->
+    <section class="section testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center; margin-bottom:var(--space-3xl);">
+          <span class="label" style="justify-content:center;">Client Love</span>
+          <h2 class="section-heading">What Families Say</h2>
+        </div>
+
+        <div class="testimonials-row">
+          <div class="testimonial reveal-up delay-1">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">Venky captured our wedding beautifully. The album he designed was beyond our expectations — every page tells a story. Truly a master of his craft.</p>
+            <p class="testimonial__author">Priya & Ravi</p>
+            <p class="testimonial__event">Wedding · Hyderabad</p>
+          </div>
+          <div class="testimonial reveal-up delay-3">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">The drone footage of our reception was stunning! Venky's eye for cinematic moments and his attention to detail made our event unforgettable.</p>
+            <p class="testimonial__author">Lakshmi & Srinivas</p>
+            <p class="testimonial__event">Wedding · Huzur Nagar</p>
+          </div>
+          <div class="testimonial reveal-up delay-5">
+            <div class="testimonial__stars">★★★★★</div>
+            <p class="testimonial__text">Our daughter's half-saree ceremony was captured so beautifully. The album is a treasure we will cherish forever. Thank you, Venky!</p>
+            <p class="testimonial__author">Suresh & Padma</p>
+            <p class="testimonial__event">Half-Saree · Suryapet</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         CONTACT & BOOKING
+         ═══════════════════════════════════════ -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="reveal-up" style="text-align:center; margin-bottom:var(--space-3xl);">
+          <span class="label" style="justify-content:center;">Get in Touch</span>
+          <h2 class="section-heading">Contact & Booking</h2>
+          <p class="section-sub" style="margin:0 auto;">Ready to preserve your story? Let's talk</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Form -->
+          <div class="reveal-left">
+            <form id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" class="form-field" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone</label>
+                <input type="tel" class="form-field" id="phone" name="phone" placeholder="+91" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="event-date">Event Date</label>
+                <input type="date" class="form-field" id="event-date" name="event-date" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="event-type">Event Type</label>
+                <select class="form-select" id="event-type" name="event-type" required>
+                  <option value="" disabled selected>Select event type</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Pre-Wedding">Pre-Wedding Shoot</option>
+                  <option value="Birthday">Birthday</option>
+                  <option value="Haldi">Haldi Ceremony</option>
+                  <option value="Half-Saree">Half-Saree Ceremony</option>
+                  <option value="Engagement">Engagement</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="location">Location</label>
+                <input type="text" class="form-field" id="location" name="location" placeholder="City or venue">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-field" id="message" name="message" placeholder="Tell us about your event…"></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary" style="width:100%; margin-top:var(--space-md);">
+                Send via WhatsApp
+              </button>
+            </form>
+          </div>
+
+          <!-- Info -->
+          <div class="reveal-right">
+            <div class="contact-info">
+              <div class="contact-row">
+                <div class="contact-icon">📱</div>
+                <div>
+                  <div class="contact-label">Phone / WhatsApp</div>
+                  <div class="contact-value"><a href="tel:+919676425924">+91 96764 25924</a></div>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon">✉️</div>
+                <div>
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value"><a href="mailto:venkeyaila1234@gmail.com">venkeyaila1234@gmail.com</a></div>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div class="contact-label">Studio</div>
+                  <div class="contact-value">Huzur Nagar, Suryapet District<br>Telangana, India</div>
+                </div>
+              </div>
+              <div class="contact-row">
+                <div class="contact-icon">💬</div>
+                <div>
+                  <div class="contact-label">Quick Booking</div>
+                  <div class="contact-value">
+                    <a href="https://wa.me/919676425924?text=Hi%20Venky%2C%20I'd%20like%20to%20book%20your%20photography%20services."
+                       target="_blank" rel="noopener" class="btn btn--whatsapp" style="margin-top:8px;">
+                      Book via WhatsApp
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30525.34!2d79.38!3d16.90!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35f0a261d4b107%3A0x9ab5c941d3e5a957!2sHuzur%20Nagar%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                      allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                      title="V Creations — Huzur Nagar, Telangana"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <img src="Photos/assets/logo.PNG" alt="V Creations" class="footer__logo">
+        <p class="footer__copy">© 2024 V Creations Photography. All rights reserved.</p>
+        <div class="footer__links">
+          <a href="https://wa.me/919676425924" target="_blank" rel="noopener" class="footer__link" aria-label="WhatsApp">💬</a>
+          <a href="tel:+919676425924" class="footer__link" aria-label="Call">📞</a>
+          <a href="mailto:venkeyaila1234@gmail.com" class="footer__link" aria-label="Email">✉️</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       LIGHTBOX
+       ═══════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">✕</button>
+    <button class="lightbox__arrow lightbox__arrow--prev" aria-label="Previous">‹</button>
+    <button class="lightbox__arrow lightbox__arrow--next" aria-label="Next">›</button>
+    <img class="lightbox__img" src="" alt="">
+    <div class="lightbox__count"></div>
+  </div>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919676425924?text=Hi%20Venky%2C%20I'd%20like%20to%20book%20your%20photography%20services."
+     target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/album.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>

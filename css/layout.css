@@ -1,0 +1,155 @@
+/* ============================================
+   V CREATIONS — Layout
+   Containers, Grids, Breakpoints
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.container--narrow {
+  max-width: var(--max-narrow);
+}
+
+.container--full {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* ── Sections ── */
+.section {
+  padding: var(--space-section) 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Split Layout (About, Contact) ── */
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .split {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* ── Stats Bar ── */
+.stats-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-bar__item {
+  padding: var(--space-2xl) var(--space-lg);
+  text-align: center;
+  border-right: 1px solid var(--border);
+}
+
+.stats-bar__item:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .stats-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stats-bar__item:nth-child(2) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-bar {
+    grid-template-columns: 1fr;
+  }
+  .stats-bar__item {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+  .stats-bar__item:last-child {
+    border-bottom: none;
+  }
+}
+
+/* ── Horizontal Scroll Gallery ── */
+.hscroll {
+  display: flex;
+  gap: var(--space-md);
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 var(--gutter);
+  scrollbar-width: none;
+}
+
+.hscroll::-webkit-scrollbar {
+  display: none;
+}
+
+.hscroll__item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+/* ── Masonry Gallery ── */
+.masonry {
+  columns: 3;
+  column-gap: var(--space-md);
+}
+
+.masonry .gallery-item {
+  break-inside: avoid;
+  margin-bottom: var(--space-md);
+}
+
+@media (max-width: 1024px) {
+  .masonry { columns: 2; }
+}
+
+@media (max-width: 600px) {
+  .masonry {
+    columns: 1;
+    column-gap: 0;
+  }
+  .masonry .gallery-item {
+    margin-bottom: var(--space-sm);
+  }
+}
+
+/* ── Contact Form Grid ── */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-3xl);
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Testimonials ── */
+.testimonials-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-xl);
+}
+
+@media (max-width: 900px) {
+  .testimonials-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}
